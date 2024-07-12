@@ -1,0 +1,179 @@
+/* General Styles */
+h1 {
+  margin-top: 10rem;
+  margin-left: 550px; /* Adjust for larger screens */
+}
+
+.cofcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.coffee-maker {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.coffee-maker img {
+  width: 100%;
+}
+
+button {
+  background-color: rgb(114, 27, 27);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Coffee + Equipment Combo Section (.Econtainer) Styles */
+#cof {
+  margin-top: 1rem;
+  margin-left: 400px; /* Adjust for larger screens */
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.Econtainer {
+  background-image: url(/images/book.jpg);
+  padding: 2rem;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 170px; /* Adjust for larger screens */
+}
+
+.image-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.content {
+  color: white;
+  margin-top: 5rem;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+#combo {
+  background-color: rgb(114, 27, 27);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1080px) {
+  h1 {
+    margin-left: 400px;
+  }
+  #cof {
+    margin-left: 200px;
+  }
+  .Econtainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    margin-left: 200px;
+  }
+  .coffee-maker {
+    width: 48%;
+  }
+
+  #cof {
+    margin-left: 150px;
+  }
+  .Econtainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-wrapper,
+  .content {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    margin-left: 200px;
+    font-size: xx-large;
+  }
+
+  .Econtainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 550px) {
+  .coffee-maker {
+    width: 100%;
+  }
+
+  h1 {
+    margin-left: 150px;
+    font-size: larger;
+  }
+  .cofcontainer {
+    width: 80%;
+  }
+
+  .Econtainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .coffee-maker {
+    padding: 10px;
+  }
+
+  #cof {
+    margin-left: 20px;
+    font-size: x-large;
+  }
+
+  .content p {
+    font-size: smaller;
+  }
+  h1 {
+    margin-left: 100px;
+    font-size: large;
+  }
+}
